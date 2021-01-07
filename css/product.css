@@ -1,0 +1,59 @@
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h6 {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    padding: 6px;
+  }
+
+  h5 {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  h4 {
+      padding: 20px !important;
+  }
+
+.section {
+    padding: 10px;
+}
+
+.navbar {
+    position: sticky;
+    background-color: white;
+    z-index: 20;
+}
+
+.heading {
+    padding-bottom: 60px;
+}
+
+.branding {
+    padding: 30px 0 250px;
+}
+
+.brand {
+    display: block;
+    font-size: 80px;
+    padding-top: 60px;
+    font-weight: 700;
+  }
+
+.header.text-center.branding {
+    padding-bottom: 20px !important;
+}
+
+.capblue {
+    color: #007bff;
+}
+
+#comparison {
+    padding-bottom: 80px;
+}

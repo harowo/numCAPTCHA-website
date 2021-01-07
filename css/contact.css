@@ -1,0 +1,106 @@
+.profile {
+    padding: 30px 0 20px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 350px;
+  }
+  
+  .profile .avatar {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .profile .avatar::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+  
+  .profile:hover .avatar::before {
+    height: 100%;
+  }
+  
+  .profile .avatar::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #007bff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .profile .avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+  
+  .profile:hover .avatar img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+  }
+  
+  .profile .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+    padding: 18px;
+  }
+  
+  .profile .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #007bff;
+    bottom: 0;
+    left: 0;
+    position: static;
+  }
+  
+  .profile:hover .social {
+    bottom: 0;
+  }
+  
+  .profile .social li {
+    display: inline-block;
+  }
+  
+  .profile .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  .profile .social li a:hover {
+    color: #007bff;
+    background-color: #f7f5ec;
+  }
+
+#contact {
+    padding: 40px 0 20px;
+}

@@ -1,0 +1,109 @@
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h6 {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    padding: 6px;
+  }
+
+  h5 {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  h4 {
+      padding: 20px !important;
+  }
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+header.masthead {
+    all: initial;
+    padding: 30px;
+}
+
+h2 {
+    color: black;
+}
+
+.navbar {
+    position: sticky;
+    background-color: white;
+    z-index: 20;
+}
+
+.list-group {
+    padding: 20px;
+}
+
+.list-group > a {
+    color: #007bff;
+    font-size: 20px;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: none;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+.features-icons {
+    padding-bottom: 20px;
+}
+
+.section {
+    padding: 10px;
+}
+
+.Demo {
+    padding: 30px 20px;
+}
+
+pre {
+    padding: 20px !important;
+}
+
+pre > code {
+    padding: 20px !important;
+    background-color: #f7f8fa !important;
+}
+
+span.view {
+    margin: auto;
+}
+
+.install-github {
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.install-github > a {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none; 
+    color: #fff;
+    background-color: #007bff;
+    width: 190px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.small {
+    color: gray;
+}
+
+#business {
+    padding-bottom: 60px;
+}

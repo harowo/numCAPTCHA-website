@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="numCAPTCHA Documentation">
+  <meta name="author" content="Kabbage">
+
+  <title>numCAPTCHA | Documentation</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/landing-page.css" rel="stylesheet">
+  <link href="../css/docs.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="navigation" class="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <img id="logo" src="../img/logo.png">
+
+    <ul>
+      <li><a class="nav-link" href="../index.html">Home</a></li>
+      <li><a class="nav-link" href="product.html">Product</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="docs.html">Documentation</a></li>
+      <li><a class="nav-link" href="#">Account</a></li>
+    </ul>
+</nav>
+
+  <!-- Content page -->
+  <section class="features-icons">
+    <div class="container">
+      <h2 class="titlename">Table of Contents</h2>
+          <div class="list-group">
+              <a href="#intro" class="list-group-item list-group-item-action">Introduction</a>
+              <a href="#installation" class="list-group-item list-group-item-action">Usage/Integration into your web app</a>
+              <a href="#submission" class="list-group-item list-group-item-action">Submission rules</a>
+              <a href="#business" class="list-group-item list-group-item-action">Business enquiry</a>
+          </div>
+        </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="features-icons" id="intro">
+    <div class="container">
+        <h1 class="mb-4">Introduction</h1>
+        <div>
+            <h3>What is numCAPTCHA?</h3>
+            <hr class="solid">
+            <h5>
+                <div class="section">numCAPTCHA is an open-source CAPTCHA service that protects your website from spam bots.</div>
+                <div class="section">numCAPTCHA takes user-submitted equations and stretch or manipulate the numbers and operators, making them simple to solve for human, but difficult to recognise for bots. </div>
+                <div class="section">By adding numCAPTCHA to your website, you can add another layer of security to block unwanted traffic.</div>
+            </h5>
+        </div>
+    </div>
+  </section>
+
+  <!-- Installation -->
+  <section class="features-icons" id="installation">
+    <div class="container">
+        <h1 class="mb-4">Usage</h1>
+        <div>
+            <h3>How to use numCAPTCHA?</h3>
+            <hr class="solid">
+            <h5>
+                <div class="section">numCAPTCHA is easy to set up and use.</div>
+                <div class="section">We have two libraries that can be use to implement numCAPTCHA into your website.</div>
+            </h5>
+            <div class="Demo">
+                <h4>JavaScript</h4>
+                <h5>In your index.html, numCaptcha dynamically renders in a <code>&lt;div&gt;</code> tag with the id of <code>captcha-wrapper</code></h5>
+                <pre><code class="html">&lt;body&gt;
+    &lt;div id="captcha-wrapper"&gt;&lt;/div&gt;
+&lt;/body&gt;</code></pre>
+                  <h5>You also need to import the minified script using a script tag</h5>
+                  <pre><code class="html">&lt;script src="https://numcaptcha.s3.amazonaws.com/lib/numCaptchaJS/numcaptcha-js.min.js"&gt;&lt;/script&gt;</code></pre>
+                  <h5>After importing the script, you would have access to the <code>useNumCaptcha()</code> function in the global windows object. The function returns a promise which resolves with the value of <code>true</code> when user successfully completes numCAPTCHA, else it would reject with the value of <code>false</code> when user is identified as a bot.</h5>
+                  <pre><code class="JavaScript">window
+        .useNumCaptcha()
+        .then((res) => {
+                // do something onSuccess
+        })
+        .catch((err) => {
+                // do something onFailed
+        });</code></pre>
+            
+                <div class="install-github">
+                    <a type="button" class="btn btn-primary" href="https://github.com/Kabbage-Babbage/libraryJS">
+                        <i class="fab fa-github fa-2x fa-fw"></i>View on Github
+                    </a>
+                </div>
+            </div>
+
+            <div class="Demo">
+                <h4>Vue.js</h4>
+                <h5>In your vue app, install the plugin from <a href="https://www.npmjs.com/get-npm">npm</a> as a dependency.</h5>
+                <pre><code>npm i --save numcaptcha-vue</code></pre>
+                <h5>In your main.js, call the Vue.use() global method to use the plugin.</h5>
+                <pre><code class="JavaScript">// firstly, import and use Font Awesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+library.add(fas);
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+
+// then, import and use numCaptcha
+import NumCaptcha from 'numcaptcha-vue';
+
+Vue.use(NumCaptcha, { FontAwesomeIcon, fas });
+
+/* ... rest of main.js ... */</code></pre>
+                    <h5>After importing the plugin, you can use it anywhere in your vue application using the <code>&lt;num-captcha /&gt;</code> component.</h5>
+                    <pre><code class="JavaScript">&lt;num-captcha @status="success | failed" /&gt;</code></pre>
+            
+                <div class="install-github">
+                    <a type="button" class="btn btn-primary" href="https://github.com/Kabbage-Babbage/libraryVUE">
+                        <i class="fab fa-github fa-2x fa-fw"></i>View on Github
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Submission -->
+  <section class="features-icons" id="submission">
+    <div class="container">
+        <h1 class="mb-4">Submission Rules</h1>
+        <div>
+            <hr class="solid">
+            <h5>
+                <div class="section">Since numCAPTCHA is open-sourced, we accept user submission of their own equations to expand our library.</div>
+                <div class="section">To protect the integrity of numCAPTCHA, submissions must meet the requirements below.</div>
+            </h5>
+            <div class="rules">
+              <ol>
+                <li>Image must be in <code>.jpg</code> format</li>
+                <li>Image dimensions must be within a height of 55 pixels and length of 135 pixels</li>
+                <li>Answer to the equation must be submitted along with the equation</li>
+                <li>The equation must be simple enough to solve. If the difficulty is too high, the submission will be rejected</li>
+              </ol>
+            </div>
+            <h5>
+              <div class="section">After meeting the above requirements, feel free to submit <a href="#">here.</a></div>
+              <div class="section small">Note that submissions go through a reviewing process.</div>
+            </h5>
+        </div>
+    </div>
+  </section>
+
+  <!-- Business -->
+  <section class="features-icons" id="business">
+    <div class="container">
+        <h1 class="mb-4">Business Enquiry</h1>
+        <div>
+            <hr class="solid">
+            <h5>
+                <div class="section">numCAPTCHA is developed and maintained by <strong>Kabbage</strong>.</div>
+                <div class="section">Contact us at <a href="mailto:kabbagebabbage@gmail.com">kabbagebabbage@gmail.com</a></div>
+            </h5>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Kabbage 2020. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="far fa-envelope fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-github fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+
+</html>
