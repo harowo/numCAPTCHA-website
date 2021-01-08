@@ -61,3 +61,11 @@ body {
 .row {
     overflow: auto;
 }
+
+.pricing-name > h4 {
+    padding: 0 !important;
+}
+
+.price-box {
+    margin-bottom: 10px;
+}
