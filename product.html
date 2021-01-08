@@ -5,10 +5,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="About numCAPTCHA">
   <meta name="author" content="Kabbage">
 
-  <title>numCAPTCHA | Home</title>
+  <title>numCAPTCHA | Product</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,11 +16,13 @@
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/landing-page.css" rel="stylesheet">
+  <link href="css/product.css" rel="stylesheet">
 
 </head>
 
@@ -36,64 +38,121 @@
     <img id="logo" src="img/logo.png">
 
     <ul>
-      <li><a class="nav-link" href="index.html">Home</a></li>
-      <li><a class="nav-link" href="static/product.html">Product</a></li>
-      <li><a class="nav-link" href="static/contact.html">Contact</a></li>
-      <li><a class="nav-link" href="static/docs.html">Documentation</a></li>
-      <li><a class="nav-link" href="#">Account</a></li>
+        <li><a class="nav-link" href="home">Home</a></li>
+        <li><a class="nav-link" href="product">Product</a></li>
+        <li><a class="nav-link" href="contact">Contact</a></li>
+        <li><a class="nav-link" href="docs">Documentation</a></li>
+        <li><a class="nav-link" href="">Account</a></li>
     </ul>
 </nav>
-
-  <!-- Masthead -->
-  <header class="masthead text-white text-center">
-    <div class="overlay"></div>
+    <!-- Masthead -->
+  <header class="text-center branding">
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">Protect your website from Bots with <span id="brand">numCAPTCHA</span></h1>
-          <a href="#features">Learn More >></a>
+            <div class="heading">
+              <div id="brand"><span class="d-inline-block">num</span><span class="d-inline-block">CAPTCHA</span></div></h1>
+                <h4>Taking security to the next level</h4>
+            </div>
+          <img src="img/sample.png">
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center" id="features">
+  <!-- Introduction -->
+  <section class="features-icons bg-light" id="intro">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="fab fa-osi"></i>
-            </div>
-            <h3>Open-Source</h3>
-            <p class="lead mb-0">User can submit their own images to be used for our model.</p>
-          </div>
+        <h1 class="mb-4">About numCAPTCHA</h1>
+        <div>
+            <hr class="solid">
+            <h5>
+                <div class="section">numCAPTCHA is an open-source CAPTCHA service that protects your website from spam bots.</div>
+                <div class="section">numCAPTCHA takes user-submitted equations and stretch or manipulate the numbers and operators, making them simple to solve for human, but difficult to recognise for bots. </div>
+                <div class="section">By adding numCAPTCHA to your website, you can add another layer of security to block unwanted traffic.</div>
+            </h5>
         </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-lock m-auto text-primary"></i>
-            </div>
-            <h3>Secure</h3>
-            <p class="lead mb-0">Our service uses simple mathematical operation to differentiate bots from human.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
-            </div>
-            <h3>Easy to Use</h3>
-            <p class="lead mb-0">Easy implementation of our service onto your website.</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- Image Showcases -->
-  <section class="pricing">
+  <!-- Comparison -->
+  <section class="features-icons" id="comparison">
+    <div class="container">
+        <h1 class="mb-4">How is numCAPTCHA different?</h1>
+        <div>
+            <hr class="solid">
+            <h5>
+                <div class="section">Standard CAPTCHA uses distorted letters and numbers to perform the test. numCAPTCHA takes this a step further, using mathematical equations instead.</div>
+                <div class="section">numCAPTCHA is also open-sourced, meaning you as a user can submit equations to be used in our question.</div>
+            </h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 my-4 mx-auto">
+                        <h2 class="text-center">Comparison Table</h2>
+            
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="table-responsve">
+                                <table class="table table-striped table-hover">
+                                  <thead class="thead-inverse">
+                                    <tr>
+                                        <th class="w25"></th>
+                                        <th class=""></th>
+                                        <th class=""></th>
+                                        <th class="">CAPTCHA</th>
+                                        <th class="capblue">numCAPTCHA</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="w-25 option">Secure</td>
+                                      <td class=""></td>
+                                      <td class=""></td>
+                                      <td><i class="fa fa-check"></i></td>
+                                      <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="option">Accessibility</td>
+                                      <td></td>
+                                      <td></td>
+                                      <td><i class="fas fa-times"></i></td>
+                                      <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="option">Continued Support</td>
+                                      <td></td>
+                                      <td></i></td>
+                                      <td><i class="fas fa-times"></i></td>
+                                      <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="option">Customizability</td>
+                                      <td></td>
+                                      <td></td>
+                                      <td><i class="fas fa-times"></i></td>
+                                      <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="option">Tech Support</td>
+                                      <td></td>
+                                      <td></td>
+                                      <td><i class="fas fa-times"></i></td>
+                                      <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing bg-light">
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-lg-12">
@@ -166,57 +225,17 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials text-center bg-light">
+  <!-- Business -->
+  <section class="features-icons" id="business">
     <div class="container">
-      <h2 class="mb-5">What people are saying...</h2>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"numCAPTCHA is amazing! Thanks so much guys!"</p>
-          </div>
+        <h1 class="mb-4">Business Enquiry</h1>
+        <div>
+            <hr class="solid">
+            <h5>
+                <div class="section">numCAPTCHA is developed and maintained by <strong>Kabbage</strong>.</div>
+                <div class="section">Contact us at <a href="mailto:kabbagebabbage@gmail.com">kabbagebabbage@gmail.com</a></div>
+            </h5>
         </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-            <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"numCAPTCHA is amazing. I've been using it for my website for 10 years."</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-            <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"Thanks so much for making numCAPTCHA free to use."</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="call-to-action text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -227,19 +246,19 @@
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
           <ul class="list-inline mb-2">
             <li class="list-inline-item">
-              <a href="#">About</a>
+              <a href="home">About</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Contact</a>
+              <a href="contact">Contact</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
+              <a href="">Terms of Use</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
+              <a href="">Privacy Policy</a>
             </li>
           </ul>
           <p class="text-muted small mb-4 mb-lg-0">&copy; Kabbage 2020. All Rights Reserved.</p>
@@ -247,17 +266,17 @@
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">
             <li class="list-inline-item mr-3">
-              <a href="#">
+              <a href="">
                 <i class="far fa-envelope fa-2x fa-fw"></i>
               </a>
             </li>
             <li class="list-inline-item mr-3">
-              <a href="#">
+              <a href="https://github.com/Kabbage-Babbage">
                 <i class="fab fa-github fa-2x fa-fw"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="">
                 <i class="fab fa-instagram fa-2x fa-fw"></i>
               </a>
             </li>
@@ -274,3 +293,4 @@
 </body>
 
 </html>
+

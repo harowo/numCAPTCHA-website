@@ -57,3 +57,7 @@ body {
 #comparison {
     padding-bottom: 80px;
 }
+
+.row {
+    overflow: auto;
+}

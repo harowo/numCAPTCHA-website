@@ -91,7 +91,9 @@ span.view {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
-    -o-user-drag: none; 
+    -o-user-drag: none;
+    -webkit-appearance: none;
+    opacity: 1;
     color: #fff;
     background-color: #007bff;
     width: 190px;
