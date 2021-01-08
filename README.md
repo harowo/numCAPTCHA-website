@@ -1,3 +1,3 @@
 # Official Website for numCAPTCHA
 
-Try at: [https://github.com/harowo/numCAPTCHA-website](https://github.com/harowo/numCAPTCHA-website)
+Try at: [https://harowo.github.io/numCAPTCHA-website/](https://harowo.github.io/numCAPTCHA-website/)
