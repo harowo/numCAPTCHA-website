@@ -32,7 +32,7 @@ body {
 }
 
 .heading {
-    padding-bottom: 60px;
+    padding: 80px 0;
 }
 
 .branding {
@@ -42,7 +42,6 @@ body {
 .brand {
     display: block;
     font-size: 80px;
-    padding-top: 60px;
     font-weight: 700;
   }
 
@@ -68,4 +67,18 @@ body {
 
 .price-box {
     margin-bottom: 10px;
+}
+
+#captcha-wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 12em !important;
+    width: 42em !important;
+}
+
+#refreshCaptcha {
+    height: 3em;
+    width: 8em;
+    margin: 30px;
+    background-color: #007bff;
 }
