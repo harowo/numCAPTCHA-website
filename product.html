@@ -47,19 +47,20 @@
     </ul>
 </nav>
     <!-- Masthead -->
-  <header class="text-center branding">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-            <div class="heading">
-              <div id="brand"><span class="d-inline-block">num</span><span class="d-inline-block">CAPTCHA</span></div></h1>
-                <h4>Taking security to the next level</h4>
-            </div>
-          <img src="img/sample.png">
+    <header class="text-center branding">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+              <div class="heading">
+                <div id="brand"><span class="d-inline-block">num</span><span class="d-inline-block">CAPTCHA</span></div></h1>
+                  <h4>Offering Enhanced Protection</h4>
+              </div>
+            <div class="col-md-12" id="captcha-wrapper"></div>
+              <button class="btn btn-primary" id="refreshCaptcha"><h5>Try again</h5></button>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
   <!-- Introduction -->
   <section class="features-icons bg-light" id="intro">
@@ -257,11 +258,11 @@
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="">Terms of Use</a>
+              <a href="javascript:void(0);">Terms of Use</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="">Privacy Policy</a>
+              <a href="javascript:void(0);">Privacy Policy</a>
             </li>
           </ul>
           <p class="text-muted small mb-4 mb-lg-0">&copy; Kabbage 2020. All Rights Reserved.</p>
@@ -292,8 +293,11 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
 
 </body>
-
+<script src="https://numcaptcha.s3.amazonaws.com/lib/numCaptchaJS/numcaptcha-js.min.js"></script>
+<script src="numValidation.js"></script>
+<script src="reloadCaptcha.js"></script>
 </html>
 
